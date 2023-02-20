@@ -1,38 +1,422 @@
-.App {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+}
+
+.navbtn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: orange;
+  transition: 0.5s;
+  font-size: 30px;
+}
+
+.navbtn-clicked {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  background-color: orange;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.navbtn:hover {
+/*  color: black;
+  background-color: orange; */
+  cursor: pointer;
+  box-shadow: 0 0 10px orange;
+}
+
+.logo-container {
+  margin: 20px;
+  position: relative;
+}
+
+.logo-container::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logo:hover {
+  box-shadow: 0 0 10px orange;
+/*  box-shadow: 0 0 10px orange;*/
+}
+
+.website-container {
+  width: 100%;
+}
+
+.nav {
+  background-color: #3b3838;
+/*  background-color: #151515;*/
+  width: 20%;
+/*  box-shadow: 10px 10px 20px 5px #151515;*/
+  z-index: 10;
+}
+
+.page-container {
+  width: 80%;
+/*  background-color: #565656;*/
+
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;
+      translate: -10% }
+  100% {opacity: 1;
+        translate: 0%}
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 130px;
+  animation: fadeIn 0.2s;
+}
+
+.home-title-1 {
+  display: flex;
+  color: orange;
+  font-size: 100px;
+}
+
+.home-title-2 {
+  display: flex;
+  color: orange;
+  font-size: 30px;
+}
+
+.home-title-3 {
+  display: flex;
+  max-width: 768px;
+  overflow: auto;
+  margin-top: 40px;
+  color: black;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-title-4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-title-5 {
+  color: orange;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/*%%%%%%%%%%%%%%%%%% WORK %%%%%%%%%%%%%%%%%*/
+
+.work-container {
+  display: grid;
+  grid-template-columns: auto 30% 50% auto;
+  grid-template-areas: 
+    ". w-header w-header ."
+    ". w-itemA1 w-itemA2 ."
+    ". w-itemB1 w-itemB2 ."
+    ". w-itemC1 w-itemC2 ."
+    ". w-itemD1 w-itemD2 .";
+  margin-top: 40px;
+  row-gap: 40px;
+  animation: fadeIn 0.2s;
+}
+
+.work-title {
+  position: relative;
+  color: orange;
+  font-size: 50px;
+  grid-area: w-header;
+}
+
+.work-title:after {
+  content: "";
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
+
+.work-logo-box {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+}
+
+.work-logo {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.work-text {
+  margin: auto;
+  text-align: center;
+}
+
+.work-text-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-text-title-first {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.work-text-title-last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.work-itemA1 {grid-area: w-itemA1;}
+.work-itemB1 {grid-area: w-itemB1;}
+.work-itemC1 {grid-area: w-itemC1;}
+.work-itemD1 {grid-area: w-itemD1;}
+.work-itemA2 {grid-area: w-itemA2;}
+.work-itemB2 {grid-area: w-itemB2;}
+.work-itemC2 {grid-area: w-itemC2;}
+.work-itemD2 {grid-area: w-itemD2;}
+
+
+
+/*
+%%%%%%%%%%%%%% EDUCATION %%%%%%%%%%%%%
+*/
+
+.edu-title {
+  position: relative;
+  color: orange;
+  font-size: 50px;
+  grid-area: e-header;
+}
+
+.edu-title:after {
+  content: "";
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
+
+
+.edu-container {
+  display: grid;
+  grid-template-columns: auto 26% 26% 26% auto;
+  grid-template-areas: 
+    ". e-header e-header e-header ."
+    ". e-itemA1 e-itemB1 e-itemC1 ."
+    ". e-itemA2 e-itemB2 e-itemC2 .";
+
+  margin-top: 40px;
+  row-gap: 40px;
+  animation: fadeIn 0.2s;
+}
+
+.edu-itemA1 {grid-area: e-itemA1;}
+.edu-itemB1 {grid-area: e-itemB1;}
+.edu-itemC1 {grid-area: e-itemC1;}
+.edu-itemA2 {grid-area: e-itemA2;}
+.edu-itemB2 {grid-area: e-itemB2;}
+.edu-itemC2 {grid-area: e-itemC2;}
+
+.edu-logo-box {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+.edu-logo {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.edu-text {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.edu-text-title-first {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.edu-text-title-second {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.edu-text-title-third {
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/*%%%%%%%%%%%%%%%%%%% THESIS %%%%%%%%%%%%%%%%%%%*/
+
+.thesis-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  animation: fadeIn 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.thesis-title {
+  position: relative;
+  color: orange;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.thesis-title:after {
+  content: "";
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
+
+.thesis-text-1 {
+  max-width: 80%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.thesis-box-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.thesis-box {
+  margin-top: 40px;
+  max-width: 320px;
+  text-align: center;
+  position: relative;
+}
+
+.thesis-box-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.thesis-arrow {
+  position: absolute;
+  top: -20%;
+  height: 60%;
+}
+
+.thesis-arrow-1 {
+  left: -50%;
+
+}
+
+.thesis-arrow-2 {
+  left: 116%;
+  transform: scaleX(-1);
+}
+
+
+
+/*%%%%%%%%%%%%%%% COUNCIL %%%%%%%%%%%%%%%%%*/
+
+.council-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.2s;
+}
+
+.council-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: orange;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.council-title:after {
+  content: "";
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
+
+.council-text-1 {
+  max-width: 80%;
+  font-size: 20px;
+  text-align: center; 
+}
+
+.council-text-2 {
+  margin-top: 40px;
+  list-style-type:disc;
+  font-size: 20px;
+}
+
+.council-text-2 li {
+  margin-top: 25px;
+}
+
+.council-text-2-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
