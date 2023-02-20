@@ -11,9 +11,9 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="thesis-container">
-        <div className="thesis-title"> Algorithm for Perfect Phylogeny and Gene Reconciliation </div>
+        <div className="thesis-title"> Algorithm in Biology </div>
         <div className="thesis-text-1">
-          My master thesis was supervised by Lars Arvestad and done in the field of Bioinformatics.
+          My master thesis, titled "<b>Algorithm for Perfect Phylogeny and Gene Reconciliation</b>" was supervised by Lars Arvestad and done in the field of Bioinformatics.
           The concepts of Phylogeny and Reconciliation are closely related 
           but there was no established algorithm that does both things combined.
           We looked at ways that we could incorporate the reconciliation in the construction of the phylogeny.
