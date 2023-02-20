@@ -41,7 +41,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div className='nav flex flex-col h-screen'>
+      <div className='nav'>
         <div className="logo-container">
           <img src={profile_pic} className="logo" onClick={()=>this.handleClick('home')}/>
         </div>
