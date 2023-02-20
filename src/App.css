@@ -675,7 +675,7 @@
   }
 
   .thesis-arrow {
-    visibility: hidden;
+    display: none;
   }
 
 }

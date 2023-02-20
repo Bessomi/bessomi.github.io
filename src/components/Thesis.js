@@ -33,8 +33,9 @@ export default class Home extends React.Component {
         </div>
         <div className="thesis-box">
         <div className="thesis-box-title"> Combined </div>
-          Once we have a gene-tree, we can reconcile it by comparing it with a known species-tree to extract more information.
-          The goal is to know if the the genes branch due to duplication or speciation events.
+            By modifying the trees in the recursive phylogeny algorithm, we can get the
+            outputs on the desired form such that they can be reconciled. The trees are modified
+            depending on which kind of inconsistency they have resulting in a fluent procedure. 
           <img src={ARROW} className="thesis-arrow thesis-arrow-1"/>
           <img src={ARROW} className="thesis-arrow thesis-arrow-2"/>
         </div>
