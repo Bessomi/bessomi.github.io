@@ -7,6 +7,7 @@ import Work from "./components/Work";
 import Education from "./components/Education";
 import Thesis from "./components/Thesis";
 import Council from "./components/Council";
+import Lang from "./components/Lang";
 import logo from './logo.svg';
 import './App.css';
 
@@ -79,6 +80,10 @@ export default class App extends React.Component{
 
     if (this.state.activePage === 'council') {
       page = <Council/>
+    }
+
+    if (this.state.activePage === 'lang') {
+      page = <Lang/>
     }
 
     return (

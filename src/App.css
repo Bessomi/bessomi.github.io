@@ -438,11 +438,85 @@
 }
 
 
+/*%%%%%%%%%%%%%%%%% LANG APP %%%%%%%%%%%%%%%%%%%%%*/
+.lang-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.2s;
+}
 
+.lang-title {
+  position: relative;
+  color: orange;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
+.lang-title:after {
+  content: "";
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
 
+.lang-box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-bottom: 80px;
+}
 
+.lang-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  max-width: 730px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 
+.lang-text-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lang-text-2 {
+  margin-left: auto;
+}
+
+.lang-pic-1 {
+  margin-left: auto;
+  max-height: 300px;
+  max-width: 330px;
+}
+
+.lang-pic-2 {
+  max-width: 430px;
+  min-width: 380px;
+}
+
+.lang-pic-2-logo {
+  margin-right: 40px;
+  max-height: 70px;
+}
+
+.center-wrapper-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media only screen and (max-width: 1200px) {
 
@@ -504,6 +578,19 @@
   .thesis-arrow-2 {
     left: 100%;
     transform: scaleX(-1);
+  }
+
+  .lang-box {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .lang-box-2 {
+    flex-direction: column-reverse;
+  }
+
+  .lang-pic-1 {
+    margin-left: 0px;
   }
 
 } 
@@ -607,7 +694,11 @@
   }
 
   .council-title {
-    font-size: 20px;
+    font-size: 25px;
+  }
+
+  .lang-title {
+    font-size: 30px;
   }
 }
 
