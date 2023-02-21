@@ -28,7 +28,7 @@ export default class Home extends React.Component {
           <div className="thesis-box">
           <div className="thesis-box-title"> Gene Reconciliation </div>
             Once we have a gene-tree, we can reconcile it by comparing it with a known species-tree to extract more information.
-            The goal is to know if the the genes branch due to duplication or speciation events.
+            The goal is to know if the genes branch due to duplication or speciation events.
           </div>
         </div>
         <div className="thesis-box">

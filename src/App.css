@@ -4,6 +4,15 @@
 }
 
 
+.hover-orange:hover {
+  box-shadow: 0 0 10px orange;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .website-container {
   display: flex;
   flex-direction: row;
@@ -125,15 +134,56 @@
 .home-title-4 {
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 20px;
   text-align: center;
 }
 
 .home-title-5 {
+  cursor: pointer;
   color: orange;
 }
 
+.home-title-6 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.home-logo {
+  max-width: 30px;
+  margin-right: 20px;
+}
+
+.home-link {
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fade-out {
+  animation: fadeOut ease 4s !important;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+
+  50% {
+    opacity:1;
+  }
+
+  100% {
+    opacity:0;
+  }
+}
+
+.home-copy {
+  color: green;
+  user-select: none;
+  opacity: 0;
+}
 
 /*%%%%%%%%%%%%%%%%%% WORK %%%%%%%%%%%%%%%%%*/
 
@@ -506,16 +556,22 @@
   max-width: 430px;
   min-width: 380px;
 }
+.lang-pic-2-logo-row {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .lang-pic-2-logo {
   margin-right: 40px;
   max-height: 70px;
 }
 
+
 .center-wrapper-align {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -591,6 +647,20 @@
 
   .lang-pic-1 {
     margin-left: 0px;
+  }
+
+  .lang-text {
+    margin-right: 0px;
+  }
+
+  .lang-pic-2 {
+    min-width: 0%;
+    width: 100%;
+  }
+
+  .lang-pic-2-logo {
+    margin-right: 0px;
+    max-height: 50px;
   }
 
 } 

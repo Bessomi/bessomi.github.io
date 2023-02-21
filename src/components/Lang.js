@@ -33,12 +33,12 @@ export default class Home extends React.Component {
         <div className="lang-box lang-box-2">
           <div className="center-wrapper-align">
             <div className="lang-pic-2">
-            <div>
+            <div className="lang-pic-2-logo-row">
               <img src={REACT_logo} className="lang-pic-2-logo"/>
               <img src={PYTHON} className="lang-pic-2-logo"/>
               <img src={NODE} className="lang-pic-2-logo"/>
             </div>
-            <div>
+            <div className="lang-pic-2-logo-row">
               <img src={MONGODB} className="lang-pic-2-logo"/>
               <img src={DOCKER} className="lang-pic-2-logo"/>
               <img src={NGINX} className="lang-pic-2-logo"/>
@@ -48,7 +48,7 @@ export default class Home extends React.Component {
           <div className="lang-text lang-text-2">
             <div className="lang-text-title"> Full-Stack application </div>
               For the frontend I use Reactjs, working mainly with class components. For the backend I use:
-              Nodejs including Express.js for the RestAPI, mongoDB for a NoSQL database,and Python for the Deep Learning models.
+              Nodejs including Express.js for the RestAPI, mongoDB for a NoSQL database, and Python for the Deep Learning models.
               Finally, for hosting I use Docker and Docker Compose for the containerization architechture, and NGINX for routing and serving.
           </div>
         </div>

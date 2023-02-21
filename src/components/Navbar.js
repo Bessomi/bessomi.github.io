@@ -44,7 +44,6 @@ class Navbar extends React.Component {
   }
 
   handleClickOutside(event) {
-    console.log(this.wrapperRef)
     if (this.wrapperRef && !this.wrapperRef.current.contains(event.target)) {
       this.props.navClose()
     }
