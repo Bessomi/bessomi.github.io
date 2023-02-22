@@ -63,6 +63,9 @@
 .logo-container {
   margin: 20px;
   position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.2s;
 }
 
 .logo-container::after {
@@ -71,20 +74,21 @@
   padding-bottom: 100%;
 }
 
+.logo-container:hover {
+  box-shadow: 0 0 10px orange;
+/*  box-shadow: 0 0 10px orange;*/
+}
+
 .logo {
   position: absolute;
   width: 100%;
   height: 100%;
+  transform: scale(1.5);
+  top: 10%;
   object-fit: cover;
-  border-radius: 50%;
   cursor: pointer;
-  transition: 0.2s;
 }
 
-.logo:hover {
-  box-shadow: 0 0 10px orange;
-/*  box-shadow: 0 0 10px orange;*/
-}
 
 .navbar-burger {
   position: absolute;
@@ -194,7 +198,7 @@
 
 .work-container {
   display: grid;
-  width: 80vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
   grid-template-columns: 30% 50%;
@@ -278,7 +282,7 @@
 
 .edu-container {
   display: grid;
-  width: 80vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
   grid-template-columns: 26% 26% 26%;

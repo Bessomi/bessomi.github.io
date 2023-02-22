@@ -49,7 +49,7 @@ export default class Home extends React.Component {
             <div className="lang-text-title"> Full-Stack application </div>
               For the frontend I use Reactjs, working mainly with class components. For the backend I use:
               Nodejs including Express.js for the RestAPI, mongoDB for a NoSQL database, and Python for the Deep Learning models.
-              Finally, for hosting I use Docker and Docker Compose for the containerization architechture, and NGINX for routing and serving.
+              Finally, for hosting I use Docker and Docker Compose for the container architecture, and NGINX for routing and serving.
           </div>
         </div>
       </div>
