@@ -7,6 +7,7 @@ export default class Counsil extends React.Component {
 
 	}
 
+// Render wrapper with cards containing title and description.
   render() {
     return (
       <div className="council-container">

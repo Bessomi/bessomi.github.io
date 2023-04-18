@@ -4,6 +4,11 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 
 class Navbar extends React.Component {
 
+
+// this.pages contains the different pages that are clickable and will render the corresponding
+// component. active will highlight the current viewed page.
+// We create a reference to know when the user clicks outside the navbar, in that event the
+// navbar should close (if the browser view is small enough, on desktop view the navbar stays open)
   constructor(props) {
     super(props)
     this.pages = [
@@ -18,15 +23,16 @@ class Navbar extends React.Component {
     this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
+  // Event listener to listen if user clicks outside the navbar. In which case it should close.
   componentDidMount() {
     document.addEventListener("mousedown", this.handleClickOutside);
   }
-
   componentWillUnmount() {
     document.removeEventListener("mousedown", this.handleClickOutside);
   }
 
-
+  // When user clicks a page on navbar, that page should be displayed
+  // and the text in the navbar should remain highlighted.
   handleClick(page_value) {
     this.props.handlePageClick(page_value)
     this.setState({
@@ -34,6 +40,7 @@ class Navbar extends React.Component {
     })
   }
 
+  // For each page, render the corresponding clickable text in the navbar
   renderbutton(page, key) {   
     return( 
       <div value = {page.value}
@@ -43,6 +50,8 @@ class Navbar extends React.Component {
     );
   }
 
+  // If user clicks outside the navbar, the navbar should close (navClose does nothing if 
+  // browser view is too big)
   handleClickOutside(event) {
     if (this.wrapperRef && !this.wrapperRef.current.contains(event.target)) {
       this.props.navClose()
@@ -50,7 +59,10 @@ class Navbar extends React.Component {
 
   }
   
-
+  // First a wrapper div, then navbar-wrapper.
+  // Then logo container with logo.
+  // Then the page-clickable-texts are rendered in the navbar.
+  // Finally render the hamburger menu for small view.
   render() {
     return (
       <div>

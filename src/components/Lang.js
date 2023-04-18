@@ -15,6 +15,10 @@ export default class Home extends React.Component {
 
 	}
 
+// First a wrapper which contains title and then also contains text and logo rows.
+// First row: text-card containing title and text. Then a picture is displayed next to it in the row.
+// Second row: First the logos are displayed, then the title and text.
+// This is styled using flexbox.
   render() {
     return (
       <div className="lang-container">

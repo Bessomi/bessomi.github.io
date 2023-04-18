@@ -10,7 +10,8 @@ class Home extends React.Component {
 	}
 
 
-
+// Render wrapper with title, then education-cards.
+// Cards consist of clickable logo, title, major, and duration.
   render() {
     return (
       <div className="center-wrapper">

@@ -10,6 +10,12 @@ export default class Work extends React.Component {
 		super(props)
 	}
 
+// First is a wrapper that centralizes content. Then a wrapper for all the work cards.
+// Then title of page.
+// Then each work-card is rendered.
+// Work-cards consist of title, company logo (clickable link to website), role title, duration of work.
+// Finally a text description of the work.
+// This component uses a grid layout.
   render() {
     return (
       <div className="center-wrapper">

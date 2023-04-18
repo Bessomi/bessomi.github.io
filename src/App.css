@@ -1,3 +1,7 @@
+/*
+Styling is done component-wise. Each component gets their own set of styles.
+The styling for the responsive design appears at the end.
+*/
 
 * {
   box-sizing: border-box;
@@ -24,6 +28,11 @@
   width: 100%;
   transition: margin-left 0.5s ;
 }
+
+
+
+
+/*%%%%%%%%%%%%%%%%%% NAVIGATION BAR %%%%%%%%%%%%%%%%%*/
 
 .nav {
   position: fixed;
@@ -54,8 +63,6 @@
 }
 
 .navbtn:hover {
-/*  color: black;
-  background-color: orange; */
   cursor: pointer;
   box-shadow: 0 0 10px orange;
 }
@@ -103,6 +110,9 @@
   100% {opacity: 1;
         translate: 0%}
 }
+
+
+/*%%%%%%%%%%%%%%%%%% HOME %%%%%%%%%%%%%%%%%*/
 
 .home-container {
   display: flex;
@@ -577,6 +587,10 @@
   align-items: center;
   width: 100%;
 }
+
+
+
+/*%%%%%%%%%%%%%%%%% RESPONSIVE DESIGN %%%%%%%%%%%%%%%%%%%%%*/
 
 @media only screen and (max-width: 1200px) {
 

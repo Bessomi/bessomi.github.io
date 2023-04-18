@@ -9,6 +9,11 @@ class Home extends React.Component {
 		super(props)
 	}
 
+// alert is the "Copied!" alert that shows up when clicking the email.
+// When clicked, the email text is copied.
+// Then alert is visible by adding css.
+// Then a new alert is created and replaces the original
+// This allows the alert to keep appearing if clicked again
   copyContent() {
     const email = document.getElementById("email");
     const alert = document.getElementById("alert")
@@ -18,6 +23,9 @@ class Home extends React.Component {
     alert.parentNode.replaceChild(newAlert, alert);
   }
 
+
+  // Render home-wrapper which contains name, titles, and short description.
+  // Then render clickable links and click-to-copy email.
   render() {
     return (
       <div className="home-container"> 

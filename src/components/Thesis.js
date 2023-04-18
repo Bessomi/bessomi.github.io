@@ -5,9 +5,12 @@ export default class Home extends React.Component {
 
 	constructor(props) {
 		super(props)
-
 	}
 
+  // First a wrapper for everything, then title for page.
+  // Then description of thesis. Afterwards a container for the two texts, followed by the texts in question.
+  // Finally, a wrapper for the final text, and then the final text.
+  // The arrows are placed after the last text and are spaced using css. 
   render() {
     return (
       <div className="thesis-container">
