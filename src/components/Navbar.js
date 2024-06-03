@@ -1,5 +1,5 @@
 import React from "react";
-import profile_pic from '../images/pic1.jpg'
+import profile_pic from '../images/pic2.png'
 import {GiHamburgerMenu} from 'react-icons/gi'
 
 class Navbar extends React.Component {
@@ -14,6 +14,7 @@ class Navbar extends React.Component {
     this.pages = [
       {display: 'Work History', value: 'work'},
       {display: 'Education', value: 'edu'},
+      {display: 'IAZZAI', value: 'iazzai'},
       {display: 'Language App', value: 'lang'},
       {display: 'Master Thesis', value: 'thesis'},
       {display: 'Student Council', value: 'council'}

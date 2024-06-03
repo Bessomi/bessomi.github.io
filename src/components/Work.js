@@ -1,4 +1,5 @@
 import React from "react";
+import CODON from '../images/codon_consulting_logo.png'
 import MONOK from '../images/monok_logo.png'
 import SU from '../images/su_logo.png'
 import KTH from '../images/kth_logo.png'
@@ -21,6 +22,16 @@ export default class Work extends React.Component {
       <div className="center-wrapper">
         <div className="work-container">
           <div className="work-title">Previous Work</div>
+          <div className="work-logo-box work-itemE1"> <a href="https://www.Codon.se/" target="_blank"><img src={CODON} className="work-logo"/> </a> </div>
+          <div className="work-text work-itemE2">
+            <div className="work-text-title"><div className="work-text-title-first">Data Scientist</div> <div className="work-text-title-last">Since Aug 2023 -</div></div>
+            Codon is a consulting company that specializes in Data Science and AI for business transformations. 
+            We know how to make best use of clients' data, from analyzing trends to building tailored full stack AI solutions.
+            In my role, I take responsibility for communicating with the clients to assess their needs,
+            and develop solutions based on those needs. As the lead developer of one of our projects
+            I'm involved in every step along the way, from data analysis to cloud deployment.
+
+          </div>
           <div className="work-logo-box work-itemA1"> <a href="https://www.monok.com/" target="_blank"><img src={MONOK} className="work-logo"/> </a> </div>
           <div className="work-text work-itemA2">
             <div className="work-text-title"><div className="work-text-title-first">Data Science Advisor</div> <div className="work-text-title-last">Mar 2019 - Aug 2021</div></div>

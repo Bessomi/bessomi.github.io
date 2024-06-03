@@ -6,6 +6,7 @@ import Education from "./components/Education";
 import Thesis from "./components/Thesis";
 import Council from "./components/Council";
 import Lang from "./components/Lang";
+import Iazzai from "./components/Iazzai";
 import logo from './logo.svg';
 import './App.css';
 
@@ -78,6 +79,9 @@ export default class App extends React.Component{
     }
     if (this.state.activePage === 'edu') {
       page = <Education/>
+    }
+    if (this.state.activePage === 'iazzai') {
+      page = <Iazzai/>
     }
     if (this.state.activePage === 'thesis') {
       page = <Thesis/>

@@ -90,8 +90,8 @@ The styling for the responsive design appears at the end.
   position: absolute;
   width: 100%;
   height: 100%;
-  transform: scale(1.5);
-  top: 10%;
+/*  transform: scale(1);*/
+/*  top: 10%;*/
   object-fit: cover;
   cursor: pointer;
 }
@@ -120,6 +120,7 @@ The styling for the responsive design appears at the end.
   width: 100%;
   align-items: center;
   margin-top: 130px;
+  padding: 20px;
   animation: fadeIn 0.2s;
 }
 
@@ -214,11 +215,13 @@ The styling for the responsive design appears at the end.
   grid-template-columns: 30% 50%;
   grid-template-areas: 
     " w-header w-header "
+    " w-itemE1 w-itemE2 "
     " w-itemA1 w-itemA2 "
-    " w-itemB1 w-itemB2 " 
+    " w-itemB1 w-itemB2 "
     " w-itemC1 w-itemC2 "
     " w-itemD1 w-itemD2 ";
   margin-top: 40px;
+  margin-bottom: 40px;
   row-gap: 40px;
   animation: fadeIn 0.2s;
 }
@@ -252,6 +255,12 @@ The styling for the responsive design appears at the end.
 .work-logo {
   max-height: 150px;
   max-width: 150px;
+  transition: box-shadow 0.2s;
+}
+
+.work-logo:hover {
+  box-shadow: 0 0 10px orange;
+/*  box-shadow: 0 0 10px orange;*/
 }
 
 .work-text {
@@ -281,10 +290,12 @@ The styling for the responsive design appears at the end.
 .work-itemB1 {grid-area: w-itemB1;}
 .work-itemC1 {grid-area: w-itemC1;}
 .work-itemD1 {grid-area: w-itemD1;}
+.work-itemE1 {grid-area: w-itemE1;}
 .work-itemA2 {grid-area: w-itemA2;}
 .work-itemB2 {grid-area: w-itemB2;}
 .work-itemC2 {grid-area: w-itemC2;}
 .work-itemD2 {grid-area: w-itemD2;}
+.work-itemE2 {grid-area: w-itemE2;}
 
 
 
@@ -344,6 +355,12 @@ The styling for the responsive design appears at the end.
 .edu-logo {
   max-height: 150px;
   max-width: 150px;
+  transition: box-shadow 0.2s;
+}
+
+.edu-logo:hover {
+  box-shadow: 0 0 10px orange;
+/*  box-shadow: 0 0 10px orange;*/
 }
 
 .edu-text {
@@ -501,6 +518,63 @@ The styling for the responsive design appears at the end.
   font-size: 20px;
 }
 
+/*%%%%%%%%%%%%%%%%% IAZZAI %%%%%%%%%%%%%%%%%%%%%*/
+.ia-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.2s;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ia-title {
+  position: relative;
+  color: orange;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.ia-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 20px;
+  max-width: 730px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.ia-text-title {
+
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ia-list-wrapper {
+  text-align: left;
+  margin-top: 10px;
+  list-style-type:disc;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.ia-logo {
+  transition: box-shadow 0.2s;
+}
+
+.ia-logo:hover {
+  box-shadow: 0 0 10px orange;
+}
+
 
 /*%%%%%%%%%%%%%%%%% LANG APP %%%%%%%%%%%%%%%%%%%%%*/
 .lang-container {
@@ -603,7 +677,7 @@ The styling for the responsive design appears at the end.
   }
 
   .home-title-1 {
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .work-text-title {
@@ -707,6 +781,8 @@ The styling for the responsive design appears at the end.
     grid-template-columns: 80%;
     grid-template-areas: 
       " w-header"
+      " w-itemE1 "
+      " w-itemE2 "
       " w-itemA1 "
       " w-itemA2 "
       " w-itemB1 "
