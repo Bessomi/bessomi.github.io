@@ -546,7 +546,7 @@ The styling for the responsive design appears at the end.
   align-items: center;
   text-align: left;
   font-size: 20px;
-  max-width: 730px;
+  max-width: 1024px;
   margin-right: 30px;
   margin-bottom: 30px;
 }

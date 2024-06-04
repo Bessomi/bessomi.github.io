@@ -33,12 +33,12 @@ class Home extends React.Component {
           Basam Al Nashea
         </div>
         <div className="home-title-2">
-          Data Scientist - Analyst - Developer
+          Data Scientist - AI Developer - Full Stack Developer
         </div>
         <div className="home-title-3">
-          I'm a recent graduate of the Master's program of Mathematics at KTH and Stockholm University.
-          I've previously enjoyed working within Data Science and assisting in University courses,
-          as well as developing a Full-Stack Application of mine.
+          I'm a Data Scientist with years of experience. 
+          Constantly exploring new technologies and staying up-to-date on the latest developments in AI.
+          Currently working as a consultant and developing some applications in my spare time.
         </div>
         <div className="home-title-4">
           <div className="center-wrapper-align flex-column">

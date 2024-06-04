@@ -34,7 +34,7 @@ export default class Work extends React.Component {
           </div>
           <div className="work-logo-box work-itemA1"> <a href="https://www.monok.com/" target="_blank"><img src={MONOK} className="work-logo"/> </a> </div>
           <div className="work-text work-itemA2">
-            <div className="work-text-title"><div className="work-text-title-first">Data Science Advisor</div> <div className="work-text-title-last">Mar 2019 - Aug 2021</div></div>
+            <div className="work-text-title"><div className="work-text-title-first">Data Science Trainee</div> <div className="work-text-title-last">Mar 2019 - Aug 2021</div></div>
             Monok is an AI-startup that generates ready-to-publish news articles and feeds. 
             My role was to advise on mathematical models, construct tools to analyse data, and preprocess data for use within Deep Learning.
             I learned a great amount about constructing end-to-end solutions that utilize the latest in Natural Language Processing.
